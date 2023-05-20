@@ -8,23 +8,24 @@
 	padding-top: 20px;
 	padding-bottom: 65px;
 	z-index:1;
+	
 }
-#lib{ position: absolute;
-	left: 30px;
+#lib{ position:absolute;
+	left:2%;
 	font-size: 20px;
 	top:10px;
 	font-weight: 10px;
 }
 #books{
 	position: absolute;
-	left:1600px;
+	right:10%;
 	font-size: 20px;
 	top:10px;
 	font-weight: 10px;
 }
 #reg{
 	position: absolute;
-	left:1750px;
+	right:4%;
 	font-size: 20px;
 	top:10px;
 	font-weight: 10px;
@@ -50,8 +51,8 @@ body{
 }
 .booksection{
 	background-color: white;
-	width: 61vw;
-	height: 67vw;
+	width: 62%;
+	height:max-content
 	color:black;
 	position: relative;
 	left:400px;
@@ -64,14 +65,13 @@ body{
 	box-shadow:#5D6D7E 10px 10px;
 }
 
-table,th,td,tr{
+th,td,tr{
 	border-style: solid;
 	border-collapse: collapse;
 	padding-right: 35px;
 	padding-left: 10px;
 	padding-bottom: 10px;
 	word-wrap: break-word;
-	width:fit-content;
 	font-size: 20px;
 	border-width: 1px;
 	text-align: left;
@@ -92,8 +92,8 @@ h1{
 	left:400px;
 	background-color: white;
 	color:black;
-	width: 61vw;
-	height: 54vw;
+	width: 62%;
+	height:max-content;
 	top: 160px;
 	font-size: 20px;
 	margin-bottom: 10px;
@@ -102,8 +102,8 @@ h1{
 	
 }
 .formtime,input,label{
-	width: 99%;
-	height: 1.5vw;
+	width:99%;
+	height:max-content;
 	padding-bottom: 10px;
 }
 label{
@@ -123,4 +123,14 @@ html{
 input[type="text"],input[type="number"],input[type="email"],input[type="date"],input[type="password"]{
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 20px;
+}
+form{
+	width: max-content;
+}
+table{
+	border-color: #AEB6BF;
+	border-style: solid;
+	border-collapse: collapse;
+	border-width: 1px;
+	width:99%;
 }
