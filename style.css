@@ -1,0 +1,126 @@
+.navbar{
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	background-color:black;
+	color:white;
+	padding-top: 20px;
+	padding-bottom: 65px;
+	z-index:1;
+}
+#lib{ position: absolute;
+	left: 30px;
+	font-size: 20px;
+	top:10px;
+	font-weight: 10px;
+}
+#books{
+	position: absolute;
+	left:1600px;
+	font-size: 20px;
+	top:10px;
+	font-weight: 10px;
+}
+#reg{
+	position: absolute;
+	left:1750px;
+	font-size: 20px;
+	top:10px;
+	font-weight: 10px;
+}
+body{
+	background-color: #D0D3D4;
+	height: 135vw;
+	font-family: 'Bebas Neue', sans-serif;
+
+}
+#books:hover{
+	color:aqua;
+	cursor: pointer;
+
+}
+#reg:hover{
+	color:aqua;
+	cursor: pointer;
+}
+#lib:hover{
+	color:aqua;
+	cursor: pointer;
+}
+.booksection{
+	background-color: white;
+	width: 61vw;
+	height: 67vw;
+	color:black;
+	position: relative;
+	left:400px;
+	top:140px;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-right: 2px;
+	border-radius: 15px;
+	box-shadow:#5D6D7E 10px 10px;
+}
+
+table,th,td,tr{
+	border-style: solid;
+	border-collapse: collapse;
+	padding-right: 35px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	word-wrap: break-word;
+	width:fit-content;
+	font-size: 20px;
+	border-width: 1px;
+	text-align: left;
+	border-color: #AEB6BF;
+	height: 1.9vw;
+	padding-top: 10px;
+}
+h1{
+	padding-bottom: 5px;
+}
+
+.formsection{
+	position: relative;
+	padding-left: 15px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	padding-right: 2px;
+	left:400px;
+	background-color: white;
+	color:black;
+	width: 61vw;
+	height: 54vw;
+	top: 160px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	box-shadow:#5D6D7E 10px 10px;
+	
+}
+.formtime,input,label{
+	width: 99%;
+	height: 1.5vw;
+	padding-bottom: 10px;
+}
+label{
+	padding-bottom: 5px;
+}
+a:link,a:visited,a:active{
+	text-decoration: none;
+	color:white;
+}
+html{
+	scroll-behavior: smooth;
+}
+#inputer{
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+input[type="text"],input[type="number"],input[type="email"],input[type="date"],input[type="password"]{
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+}

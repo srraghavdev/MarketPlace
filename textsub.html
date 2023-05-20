@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<script>
+		function validatePassword(){
+			var password = document.getElementById("password")
+		  , confirm_password = document.getElementById("confirm_password");
+		  if(password.value != confirm_password.value) {
+			confirm_password.setCustomValidity("Passwords Don't Match");
+		  } else {
+			confirm_password.setCustomValidity('');
+		  }
+		}
+	</script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+		</style>
+		
+</head>
+
+<body>
+<div>
+	<nav class="navbar">
+		<a><p id="lib">Library System</p></a>
+		<a href="#booksection1"><p id="books">Books</p></a>
+		<a href="#formsecgh"><p id="reg">Register</p></a>
+		
+	</nav>
+</div>
+<div class="scroll" id="booksection1">
+	<div class="booksection">
+		<h1>Books</h1>
+		<table style="width: 99%;">
+			<tr>
+				<th>Book ID</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Genre</th>
+				<th>Availability</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td><a href="https://www.goodreads.com/en/book/show/113436" style="color: black;" target="_blank">Eragon</a>
+					<table>
+						<tr>
+							<td>Publication Date:2002</td>
+					
+						</tr>
+						<tr><td>Page Count:503</td></tr>
+						<tr><td>ISBN:9780375826696</td></tr>
+					</table>
+				</td>
+				<td>Christopher Paolini</td>
+				<td>Fiction</td>
+				<td>Available</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><a href="https://www.goodreads.com/book/show/13335037-divergent" style="color: black;" target="_blank">Divergent</a>
+					<table>
+						<tr>
+							<td>Publication Date:2011</td>
+					
+						</tr>
+						<tr><td>Page Count:487</td></tr>
+						<tr><td>ISBN:9780062024039</td></tr>
+					</table>
+				</td>
+				<td>Veronica Roth</td>
+				<td>Science Fiction</td>
+				<td>Not Available</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><a href="https://www.goodreads.com/book/show/5.Harry_Potter_and_the_Prisoner_of_Azkaban" style="color: black;" target="_blank">Harry Potter and the Prisoner of Azkaban</a>
+					<table>
+						<tr>
+							<td>Publication Date:1999</td>
+					
+						</tr>
+						<tr><td>Page Count:435</td></tr>
+						<tr><td>ISBN:9780439655484</td></tr>
+					</table>
+				</td>
+				<td>J.K. Rowling</td>
+				<td>Magic,Fantasy</td>
+				<td>Available</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><a href="https://www.goodreads.com/en/book/show/11127" style="color: black;" target="_blank">The Chronicles of Narnia</a>
+					<table>
+						<tr>
+							<td>Publication Date:1956</td>
+					
+						</tr>
+						<tr><td>Page Count:767</td></tr>
+						<tr><td>ISBN:9780066238500</td></tr>
+					</table>
+				</td>
+				<td>C.S. Lewis</td>
+				<td>Adventure,Fantasy</td>
+				<td>Not Available</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><a href="https://www.goodreads.com/book/show/28187.The_Lightning_Thief" style="color: black;" target="_blank">The Lightning Thief</a>
+					<table>
+						<tr>
+							<td>Publication Date:2005</td>
+					
+						</tr>
+						<tr><td>Page Count:377</td></tr>
+						<tr><td>ISBN:9780786838653</td></tr>
+					</table>
+				</td>
+				<td>Rick Riordan</td>
+				<td>Fiction,Mythology</td>
+				<td>Available</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div class="formsection" id="formsecgh">
+	<h1>Register</h1>
+<form class="formtime">
+	<label for="firstname">First Name:</label><br><br>
+	<input type="text" required>
+<br><br>
+	<label for="lastname">Last Name:</label><br><br>
+	<input type="text" required>
+	<br><br>
+	<label for="email">Email:</label><br><br>
+	<input type="email" required>
+	<br><br>
+	<label for="dob">Date of Birth:</label><br><br>
+	<input type="date" required>
+	<br><br>
+	<label for="age">Age:</label><br><br>
+	<input type="number" min="5" max="100" required>
+	<br><br>
+	<label for="password">Enter Password:</label><br><br>
+	<input type="password" id="password" required>
+	<br><br>
+	<label for="password">Confirm Password:</label><br><br>
+	<input type="password" id="confirm_password" required>
+	<br><br>
+	<label for="register"></label>
+	<input type="submit" value="Register" style="background-color: black;color: white;height: 45px;text-align: center;font-size: 25px;" onclick="validatePassword()" id="inputer">
+</form>
+</div>
+</body>
+
+</html>
