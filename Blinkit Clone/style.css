@@ -287,8 +287,8 @@ footer{
 footer .fa-heart{
     color:red;
 }
-/* media queries for mobile devices*/
-@media screen and (min-width:320px) and (max-width:480px){
+/* media queries for mobile devices,ipads,tablets and some laptop screens*/
+@media screen and (min-width:320px) and (max-width:1020px){
     body{
         width: 100%;
     }
