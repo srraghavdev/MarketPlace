@@ -11,6 +11,10 @@ body{
     flex-direction: column;
     height: 100%;
 }
+header{
+    border:none;
+    outline:none;
+}
 header .container {
     display: flex;
     align-items: center;
@@ -149,6 +153,9 @@ header .container {
     100% {
         transform: rotate(0deg);
     }
+}
+.profile{
+    display: none;
 }
 /* main section */
 .wrapper{
@@ -321,9 +328,11 @@ footer .fa-heart{
         flex-direction: column;
         width:100% !important;
         height: 112px !important;
+        padding-bottom: 124px;
     }
     .wrapper{
          min-height: 100vh;
+         margin-top: 4%;
     }
     .main-container{
         width: 100% !important;
@@ -405,6 +414,13 @@ footer .fa-heart{
     }
     footer{
         position: static;
+    }
+    .profile{
+    display: inline;
+     position: absolute;
+    right: 0px;
+    margin-top: 16px;
+    margin-right: 16px;
     }
 }
     
