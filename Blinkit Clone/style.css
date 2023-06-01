@@ -163,7 +163,7 @@ header .container {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    top: 100px;
+    top: 85px;
     position: relative;
     
 }
@@ -310,8 +310,8 @@ footer{
     position: relative;
     text-align: center;
     margin-bottom: 10px;
-    top: 75px;
-    padding-top: 10px;
+    top: 66px;
+    padding-top: 0px;
 }
 footer .fa-heart{
     color:red;
@@ -363,7 +363,8 @@ footer .fa-heart{
         margin-left: 10px;
         padding-bottom: 10px;
         column-gap: 12px;
-        height: 256px
+        height: 256px;
+        overflow-y: hidden;
     }
     .item img{
         width: 83%;
@@ -382,7 +383,7 @@ footer .fa-heart{
     }
     .location{
         margin-left: 16px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .container{
         align-items: start !important;
@@ -396,9 +397,7 @@ footer .fa-heart{
         height: 112px;
     }
     .banner{
-    display: flex;
-    justify-content: center;
-    left: 0px;
+     display: none;
     
     }
     .categories{
