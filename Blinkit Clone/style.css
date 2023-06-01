@@ -349,7 +349,10 @@ footer .fa-heart{
         height: 100% !important;
     }
     .item{
-        min-width: 50% !important;
+        width: 33.333% !important;
+        height: 256px;
+        border: none;
+        padding-bottom: 0px;
         
     }
     .list-items{
@@ -357,10 +360,13 @@ footer .fa-heart{
         padding-left: 0px;
         justify-content: flex-start;
         margin-left: 10px;
+        padding-bottom: 10px;
+        column-gap: 12px;
+        height: 256px
     }
     .item img{
-        width: 98%;
-        height: 98%;
+        width: 83%;
+        height: 100%;
     }
     .location p{
         text-align: start;
@@ -421,6 +427,12 @@ footer .fa-heart{
     right: 0px;
     margin-top: 16px;
     margin-right: 16px;
+    }
+    .item-img{
+        height: 50%;
+    }
+    .item-details{
+        height: 50%;
     }
 }
     
