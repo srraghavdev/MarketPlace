@@ -167,6 +167,7 @@ header .container {
     position: relative;
     
 }
+
 .main-container{
     max-width: 1280px;
 }
@@ -467,6 +468,7 @@ footer .fa-heart{
     }
     .wrapper{
         margin-left: 1%;
+        width: 97%;
     }
 }
     @media  screen and (min-width:1371px) and (max-width:1462px){
