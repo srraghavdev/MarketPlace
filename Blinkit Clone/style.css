@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     height: 100%;
 }
+/* The navbar doesn't have any links becuase blinkit uses modals for login,cart and address. Since this is a static clone so no links plus none of the elements in the navbar can be scrollable on click */
 header{
     border:none;
     outline:none;
