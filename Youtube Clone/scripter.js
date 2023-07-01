@@ -117,6 +117,12 @@ function renderData(result,indidata){
             if(dur.length===1 && Number(dur[0])===1){
             dur="SHORT"
         }
+        else{
+            dur="0:"+dur
+        }
+        }
+        else if(dur.length===2){
+            dur="0:"+dur
         }
         else if(dur.length===3){
             dur=`${dur.substring(0,1)}:${dur.substring(1,3)}`
@@ -132,11 +138,11 @@ function renderData(result,indidata){
         }
         createELement.className="video_card"
             createELement.innerHTML=
-                    `<div class="top">
+                    `<div class="top" onclick="getplayer('${result[i].id}')">
                     <img src="${result[i].snippet.thumbnails.high.url}" class="thumbnail" style="border-radius:12px;">
                     </div>
                     <div class="length">${dur}</div>
-                    <div class="bottom" style="width: 100%;padding-top:5px;">
+                    <div class="bottom" style="width: 100%;padding-top:5px;" onclick="getplayer('${result[i].id}')">
                          <img src="${indidata[i].snippet.thumbnails.high.url}" style="border-radius:50%;width:11%;">
                         <div class="b2">
                             <p style="color:#f1f1f1;padding-bottom:5px;font-weight:500;">${str}</p>
@@ -146,10 +152,15 @@ function renderData(result,indidata){
                     </div>
             </div> `
         main.append(createELement)
+        
     }
 }
 const searf= document.getElementById("searchinput")
 searf.addEventListener("click",searchin)
 function searchin(){
 getvideo(searf.value)
+}
+function getplayer(videoId){
+    localStorage.setItem("videoId",videoId)
+    window.open("./player.html")
 }
