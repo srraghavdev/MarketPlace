@@ -138,7 +138,12 @@ function finaledit(event){
 function search(){
     console.log(1)
     let search=document.getElementById("search").value
-    let filter= student_details.filter((item) => { return ((item.name).includes(search)|| (item.email).includes(search)|| (item.degree).includes(search))})
+    let filter= student_details.filter((item) => { 
+        let serchup=search.toUpperCase()
+        let b1=item.name.toUpperCase()
+        let b2=item.email.toUpperCase()
+        let b3=item.degree.toUpperCase()
+        return ((b1).includes(serchup)|| (b2).includes(serchup)|| (b3).includes(serchup))})
     console.log(filter)
     rednersearch(filter)
 }
