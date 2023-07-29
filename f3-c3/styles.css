@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./dark-texture-watercolor.jpg);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 4px;
+background: #FFF;
+box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+padding: 2%;
+}
+#contbtn{
+width: 100%;
+ border-radius: 6px;
+background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+color: #FFF;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: 18px; /* 112.5% */
+text-transform: uppercase;
+height:35px;
+margin-bottom: 5%;
+border: none;
+}
+input{
+    width:100%;
+    border-radius: 6px;
+    border: 1px solid #DEDEDE;
+    padding:1%;
+    margin-bottom: 5%;
+    height: 30px;
+}
+.head{
+    padding-bottom: 5%;
+    color: #333;
+font-family: Mulish;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.message{
+    padding-bottom: 5%;
+    color: #757575;
+font-family: Mulish;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+label{
+color: #333;
+font-family: Mulish;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.dynamic{
+color: #625BF7;
+text-align: center;
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+.container{
+    width: 80%;
+    padding: 5%;
+}
+.dynamic{
+    font-size: 10px;
+}
+}
